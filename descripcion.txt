@@ -1,0 +1,15 @@
+Equivalente a un "Hola, Mundo" para SUMO y Python: un script simple que inicie la simulación, "vea" un coche moverse de un punto A a un punto B, y nos informe de lo que está sucediendo
+en cada paso.
+Esto te enseñará el ciclo fundamental de Conectar -> Simular Paso a Paso -> Leer Datos -> Actuar (opcional) -> Cerrar.
+Tu Punto de Partida: Un Coche en una Calle Recta
+Para no depender del trabajo de tu compañero, crearás un escenario mínimo y autocontenido. Solo necesitas 4 archivos de texto y 1 script de Python.
+
+Tecnologías que necesitarás para empezar:
+Lenguaje de Programación: Python (es el estándar de facto para IA y tiene la mejor integración con las herramientas necesarias).
+Simulador de Tráfico: SUMO (es de código abierto, potente y bien documentado).
+API de Comunicación: TraCI (viene con SUMO).
+Librerías de IA/RL:
+Gymnasium (antes OpenAI Gym): Para estandarizar tu entorno de simulación.
+Stable-Baselines3: Una librería de RL muy popular y fácil de usar para empezar.
+RLlib: Una opción más avanzada y escalable para cuando tu proyecto crezca.
+Librerías de Datos: NumPy y Pandas para manejar los datos del estado del tráfico.

@@ -1,0 +1,5 @@
+<routes>
+    <vType id="tipo_coche" accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="13.89" />
+    <route id="ruta_simple" edges="calle1" />
+    <vehicle id="coche_0" type="tipo_coche" route="ruta_simple" depart="0" />
+</routes>

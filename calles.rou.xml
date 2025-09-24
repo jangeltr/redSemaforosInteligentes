@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-09-24 13:33:18 by Eclipse SUMO netedit Version 1.24.0
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- Vehicles, persons and containers (sorted by depart) -->
+    <flow id="f_0" begin="0.00" color="0,128,119" from="-E22" to="E28" number="1800" probability="0.22000000000000000111"/>
+    <flow id="f_1" type="DEFAULT_BIKETYPE" begin="0.00" color="128,9,0" from="-E22" to="E18" number="1800" probability="0.05000000000000000278"/>
+    <flow id="vh-Familia3" begin="0.00" color="128,9,0" from="-E30" to="E27" number="1800" probability="0.23999999999999999112"/>
+    <flow id="vh-Familiar" begin="0.00" color="128,128,0" from="-E23" to="E29" end="500.00" probability="0.2000000000000000111"/>
+    <flow id="vh-Pesao2" type="DEFAULT_CONTAINERTYPE" begin="0.00" color="128,9,0" from="E12" to="E19" number="1800" probability="0.23999999999999999112"/>
+    <flow id="vh-motorola" type="DEFAULT_BIKETYPE" begin="0.00" color="41,197,217" from="-E21" to="E24" end="500.00" probability="0.1000000000000001027"/>
+    <flow id="vh-motorola3" type="DEFAULT_BIKETYPE" begin="0.00" color="128,9,0" from="-E11" to="E28" number="1800" probability="0.10000000000000000555"/>
+    <flow id="vh-pesao1" type="DEFAULT_CONTAINERTYPE" begin="0.00" color="128,128,0" from="-E29" to="E11" end="500.00" probability="0.2999999999999999889"/>
+</routes>

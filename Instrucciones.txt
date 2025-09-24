@@ -1,0 +1,56 @@
+# Preparar para la instalacion
+sudo apt update
+sudo apt upgrade
+
+# Intslacion y verificacion de Python
+sudo apt install python3-pip python3-venv
+
+python3 --version
+pip3 --version
+
+
+# Instala SUMO y sus herramientas
+sudo apt install sumo sumo-tools sumo-doc
+
+# Verifica la instalación:
+# Abre la interfaz gráfica de SUMO para confirmar que funciona.
+sumo-gui
+# Debería abrirse una ventana gris con la interfaz de SUMO. 
+Puedes cerrarla. También verifica netconvert, la herramienta que tu compañero necesitará:
+netconvert --version
+
+# Crea una carpeta para tu proyecto y entra en ella:
+mkdir proyecto_traci
+cd proyecto_traci
+
+# Crea el entorno virtual de python
+python3 -m venv venv
+
+########### Activa el entorno virtual:
+# Este es el paso más importante. Tienes que hacer esto cada vez que abras una nueva terminal para trabajar en el proyecto.
+source venv/bin/activate
+
+# Instalar las Librerías de Python (Dentro del Entorno Virtual)
+pip install numpy gymnasium "stable-baselines3[extra]" torch
+# Verifica la instalación de las librerías:
+pip list
+
+# Configurar la Variable de Entorno SUMO_HOME
+# El script de Python que te di necesita saber dónde están instalados los archivos de SUMO
+nano ~/.bashrc
+# Añade la siguiente línea al final del archivo:
+export SUMO_HOME="/usr/share/sumo"
+# Aplica los cambios a tu sesión de terminal actual:
+echo $SUMO_HOME
+
+# Generando el Mapa de la Red (.net.xml)
+#El "Qué":
+#Ahora tienes los "ingredientes" del mapa (nodos y calles), pero SUMO necesita que los "cocines" en un único archivo de red que pueda entender. Para eso se usa el comando netconvert.
+#El "Porqué":
+#SUMO optimiza los archivos de nodos y aristas en un formato de red binario o XML (.net.xml) que es mucho más eficiente para ejecutar la simulación. Este paso es obligatorio. netconvert se asegura de que las conexiones sean correctas, calcula geometrías y prepara todo para el simulador.
+#El "Cómo":
+#En tu terminal (estando en la carpeta proyecto_syncronia), ejecuta el siguiente comando:
+netconvert --node-files=simple.nod.xml --edge-files=simple.edg.xml -o simple.net.xml
+
+# Ejecutando el Script y Viendo la Magia
+python controlador.py
