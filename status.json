@@ -1,1 +1,1 @@
-{"paso_simulacion": 5720, "vehiculos_activos": 0, "vehiculos_parados": 0, "emergencia_activa": false, "vehiculos_llegados_total": 1513, "tiempo_espera_promedio": 0}
+{"paso_simulacion": 4575, "vehiculos_activos": 1, "vehiculos_parados": 0, "emergencia_activa": false, "vehiculos_llegados_total": 1514, "tiempo_espera_promedio": 83.0}
