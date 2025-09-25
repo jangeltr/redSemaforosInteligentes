@@ -54,3 +54,14 @@ netconvert --node-files=simple.nod.xml --edge-files=simple.edg.xml -o simple.net
 
 # Ejecutando el Script y Viendo la Magia
 python controlador.py
+
+
+
+
+# La Interfaz Humana (Dashboard Interactivo)
+pip install altair
+pip install streamlit
+
+# ejecutar la app
+Terminal 1: python3 control_con_dashboard.py
+Terminal 2: streamlit run dashboard.py
